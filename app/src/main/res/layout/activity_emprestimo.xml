@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmprestimoActivity">
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/btnBackDescription"
+        android:src="@drawable/ic_seta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="64dp"
+        android:fontFamily="@font/nunito_semi"
+        android:text="Empréstimo"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Valor disponível para você"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backBtn" />
+
+    <TextView
+        android:id="@+id/txt_saldo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textSize="35sp"
+        android:textColor="@color/azul_medio"
+        android:text="R$5.000,00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl1" />
+
+    <TextView
+        android:id="@+id/lbl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Qual valor deseja simular?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_saldo" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edt_valoremprestimo"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edt_custom"
+        android:fontFamily="@font/ubuntu_regular"
+        android:hint="R$"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColorHint="@color/azul_claro"
+        app:layout_constraintTop_toBottomOf="@+id/lbl2"/>
+
+    <TextView
+        android:id="@+id/lbl3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Quantas parcelas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_valoremprestimo" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edt_valorrecarga"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edt_custom"
+        android:fontFamily="@font/ubuntu_regular"
+        android:hint="3x"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColorHint="@color/azul_claro"
+        app:layout_constraintTop_toBottomOf="@+id/lbl3"/>
+
+    <TextView
+        android:id="@+id/lbl4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Melhor dia de vencimento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_valorrecarga" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/spin_operadoras"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edt_custom"
+        android:fontFamily="@font/ubuntu_regular"
+        android:hint="Dia 10"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColorHint="@color/azul_claro"
+        app:layout_constraintTop_toBottomOf="@+id/lbl4"/>
+
+    <android.widget.Button
+        android:id="@+id/btn_registrar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/btn_custom2"
+        android:drawablePadding="-20dp"
+        android:fontFamily="@font/nunito_semi"
+        android:text="@string/prosseguir"
+        android:textAllCaps="false"
+        android:textColor="@color/outro_branco"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/spin_operadoras"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

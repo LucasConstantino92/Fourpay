@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RedefinirSenhaActivity">
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_seta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047"
+        android:contentDescription="@string/btnBackDescription" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="64dp"
+        android:fontFamily="@font/nunito_semi"
+        android:text="Redefinir senha"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="84dp"
+        android:fontFamily="@font/nunito_semi"
+        android:text="Insira um email de recuperação"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backBtn" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_chave"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:drawableEnd="@drawable/ic_cpf"
+            android:hint="@string/emailHint"
+            android:inputType="textEmailAddress" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <android.widget.Button
+        android:id="@+id/btn_enviar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:background="@drawable/btn_custom2"
+        android:drawablePadding="-20dp"
+        android:fontFamily="@font/nunito_semi"
+        android:text="Enviar email"
+        android:textAllCaps="false"
+        android:textColor="@color/outro_branco"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/layout_chave"
+        app:layout_constraintVertical_bias="0.069" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

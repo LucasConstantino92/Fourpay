@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">FourPay</string>
+
+    // TEXTOS TELA INTRODUÇÃO
+    <string name="texto_intro">Uma maneira descomplicada de ver o mundo financeiro!</string>
+    <string name="entrar_conta">Já tenho uma conta</string>
+    <string name="btn_comecar">Venha ser Fourpay</string>
+    <string name="txt_abertura_de_conta">Para iniciar, precisaremos que informe alguns dados pessoais para realizarmos a abertura da sua conta.</string>
+    <string name="lembrarme">Mantenha-me conectado</string>
+    <string name="title_login">Que bom te ver de volta!</string>
+
+    //TEXTOS VALIDAR FOTO
+    <string name="confirme_identidade">Confirme sua identidade!</string>
+    <string name="envie_foto">Por favor, envie uma foto do seu rosto.</string>
+    <string name="galeria">Galeria</string>
+    <string name="camera">Câmera</string>
+    <string name="enviar">Enviar</string>
+
+
+    <string name="lipsum2">Lorem ipsum dolor sit amet, consectetur \nadipiscing elit. Integer non erat nec \narcu pharetra condimentum id sit amet eros.\n Duis mollis libero eros, quis rutrum enim tempus eu.</string>
+    <string name="four">four</string>
+    <string name="pay">pay</string>
+    <string name="escolhaCartao">Escolha do cartão</string>
+    <string name="escolhaCartao2">Qual cartão você deseja?</string>
+    <string name="cartaoAzulDescription">Cartão de crédito ilustrativo azul</string>
+    <string name="cartoes">Cartão de débito e crédito</string>
+    <string name="selecionarCartaoAzul">Selecionar Standard</string>
+    <string name="tituloCartaoBlack">Cartão de débito e crédito internacional</string>
+    <string name="botaoSelecaoBlack">Selecionar Black</string>
+    <string name="btnProsseguir">Prosseguir</string>
+    <string name="btnBackDescription">Botão para retornar para a tela anterior</string>
+    <string name="boasVindas">Bem vindo(a)</string>
+    <string name="saldoExemplo">1.000,00</string>
+    <string name="moedaSigla">R$</string>
+    <string name="saldoLabel">Seu saldo:</string>
+    <string name="btnOcultarMostrarDescription">Botão para mostrar/ocultar saldo</string>
+    <string name="servicosLabel">Principais serviços</string>
+    <string name="pixDescription">Ícone Pix</string>
+    <string name="pixLabel">Pix</string>
+    <string name="pagarDescription">Ícone QR Code</string>
+    <string name="pagarLabel">Pagar</string>
+    <string name="transferenciaDescription">Ícone de transferência</string>
+    <string name="transferirLabel">Transferir</string>
+    <string name="recargaLabel">Recarga</string>
+    <string name="recargaDescription">Ícone recarga</string>
+    <string name="emprestimoDescription">Ícone empréstimo</string>
+    <string name="emprestimoLabel">Empréstimo</string>
+    <string name="meusCartoesLabel">Meus cartões</string>
+    <string name="faturaLabel">Fatura</string>
+    <string name="saldoExemplo2">R$0</string>
+    <string name="imgCartaoAzulDescription">Cartão azul</string>
+    <string name="faturaExemplo3">R$0</string>
+    <string name="cpfHint">CPF</string>
+    <string name="senhaHint">Senha</string>
+    <string name="bemvindoLabel">Boas vindas...</string>
+    <string name="nomeCompletoHinrt">Nome completo</string>
+    <string name="rgHint">RG</string>
+    <string name="emailHint">Email</string>
+    <string name="celularHint">Celular</string>
+    <string name="dateNascHint">DD/MM/AAAA</string>
+    <string name="cepHint">CEP 00000-000</string>
+    <string name="enderecoHint">Endereço</string>
+    <string name="NumeroHint">Número</string>
+    <string name="complementoHint">Complemento</string>
+    <string name="bairroHint">Bairro</string>
+    <string name="cidadeHint">Cidade</string>
+    <string name="estadoHint">Estado</string>
+    <string name="renda_mensalHint">Renda mensal</string>
+    <string name="estadoCivilHint">Estado civil</string>
+    <string name="confirmar_senhaHint">Confirmar senha</string>
+    <string name="lieconcordoHint">Li e concordo com os</string>
+    <string name="termos">Termos</string>
+    <string name="prosseguir">Prosseguir</string>
+    <string name="splashDescription">Logo Fourpay</string>
+    <string name="termos_de_uso">Termos de uso</string>
+    <string name="blackCardDescription">Foto cartão Black</string>
+    <string name="lipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id velit nec est scelerisque tincidunt ac quis leo. Nam consequat elit vitae sapien faucibus, ut sollicitudin justo placerat. Cras fringilla bibendum vulputate. Aenean non interdum turpis. Sed ultrices quis sem vehicula mollis. Donec quis massa mattis, auctor quam id, vehicula nibh. Nullam imperdiet sit amet ex quis placerat. Vivamus vitae felis vel turpis scelerisque viverra eget a erat. Vivamus quis tempus tortor. Vivamus elit diam, viverra et convallis vitae, vehicula sed libero. Vivamus risus felis, scelerisque ut varius eget, elementum at nulla. Phasellus semper massa nisl, eget porta massa mattis et.</string>
+    <string name="j_cliente_clique_aqui">Já é cliente? Clique aqui.</string>
+    <string name="venha_ser_foupay">Venha ser Fourpay</string>
+
+</resources>

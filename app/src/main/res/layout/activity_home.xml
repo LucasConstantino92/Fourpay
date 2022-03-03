@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:background="@drawable/fundohome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btn_conta"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="40dp"
+                    android:src="@drawable/ic_profile"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.205" />
+
+                <TextView
+                    android:id="@+id/txt_nome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:fontFamily="@font/nunito_semi"
+                    android:text=""
+                    android:textColor="@color/outro_branco"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_conta"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="40dp"
+                    android:alpha="0.7"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="@string/boasVindas"
+                    android:textColor="@color/outro_branco"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/saldo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_regular"
+                    android:text=""
+                    android:textColor="@color/outro_branco"
+                    android:textSize="40sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_eye"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView16"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginBottom="36dp"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="@string/moedaSigla"
+                    android:textColor="@color/outro_branco"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_conta"
+                    app:layout_constraintVertical_bias="0.828" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="40dp"
+                    android:alpha="0.7"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="@string/saldoLabel"
+                    android:textColor="@color/outro_branco"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_nome" />
+
+                <ImageButton
+                    android:id="@+id/btn_eye"
+                    android:layout_width="55dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="28dp"
+                    android:background="#001c1c1c"
+                    android:contentDescription="@string/btnOcultarMostrarDescription"
+                    android:src="@drawable/ic_eye_white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_nome"
+                    app:layout_constraintVertical_bias="0.573" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:alpha="0.7"
+            android:fontFamily="@font/lato_regular"
+            android:text="@string/servicosLabel"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView18">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/linear_pix"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="12dp"
+                            android:background="@drawable/edt_btn_home"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="93dp"
+                                    android:layout_height="37dp"
+                                    android:paddingStart="30dp"
+                                    android:paddingEnd="30dp"
+                                    android:src="@drawable/ic_pix"
+                                    android:contentDescription="@string/pixDescription" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="7dp"
+                                    android:text="@string/pixLabel"
+                                    android:textColor="@color/outro_branco" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_pagar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="12dp"
+                            android:background="@drawable/edt_btn_home"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="99dp"
+                                    android:layout_height="37dp"
+                                    android:paddingStart="30dp"
+                                    android:paddingEnd="30dp"
+                                    android:src="@drawable/ic_pagar"
+                                    android:contentDescription="@string/pagarDescription" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="7dp"
+                                    android:text="@string/pagarLabel"
+                                    android:textColor="@color/outro_branco" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_recarga"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="12dp"
+                            android:background="@drawable/edt_btn_home"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="99dp"
+                                    android:layout_height="37dp"
+                                    android:contentDescription="@string/recargaDescription"
+                                    android:paddingStart="30dp"
+                                    android:paddingEnd="30dp"
+                                    android:src="@drawable/ic_recarga" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="7dp"
+                                    android:text="@string/recargaLabel"
+                                    android:textColor="@color/outro_branco" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_emprestimo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="12dp"
+                            android:background="@drawable/edt_btn_home"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="99dp"
+                                    android:contentDescription="@string/emprestimoDescription"
+                                    android:layout_height="37dp"
+                                    android:paddingStart="30dp"
+                                    android:paddingEnd="30dp"
+                                    android:src="@drawable/ic_emprestimo" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="7dp"
+                                    android:text="@string/emprestimoLabel"
+                                    android:textColor="@color/outro_branco" />
+                        </LinearLayout>
+
+                </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:alpha="0.5"
+            android:background="@color/azul_claro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:alpha="0.7"
+            android:fontFamily="@font/lato_regular"
+            android:text="@string/meusCartoesLabel"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="24dp"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.215"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="12dp">
+
+                                <ImageView
+                                    android:id="@+id/imageView5"
+                                    android:layout_width="300dp"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/card_empty_black"
+                                    android:contentDescription="@string/blackCardDescription"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.0" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:alpha="0.7"
+                                    android:text="@string/faturaLabel"
+                                    android:textColor="@color/outro_branco"
+                                    android:textSize="16sp"
+                                    android:visibility="invisible"
+                                    app:layout_constraintBottom_toTopOf="@+id/fatura_black"
+                                    app:layout_constraintStart_toStartOf="@+id/imageView5"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView5"
+                                    app:layout_constraintVertical_bias="1.0" />
+
+                                <TextView
+                                    android:id="@+id/fatura_black"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:text="@string/saldoExemplo2"
+                                    android:visibility="invisible"
+                                    android:textColor="@color/outro_branco"
+                                    android:textSize="25sp"
+                                    app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                                    app:layout_constraintStart_toStartOf="@+id/imageView5"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView5"
+                                    app:layout_constraintVertical_bias="0.844" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="12dp">
+
+                                <ImageView
+                                    android:id="@+id/imageView4"
+                                    android:contentDescription="@string/imgCartaoAzulDescription"
+                                    android:layout_width="300dp"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/card_empty_standard"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="1.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="1.0" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:alpha="0.7"
+                                    android:text="@string/faturaLabel"
+                                    android:visibility="invisible"
+                                    android:textColor="@color/outro_branco"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toTopOf="@+id/fatura_standard"
+                                    app:layout_constraintStart_toStartOf="@+id/imageView4"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView4"
+                                    app:layout_constraintVertical_bias="1.0" />
+
+                                <TextView
+                                    android:id="@+id/fatura_standard"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:text="@string/faturaExemplo3"
+                                    android:visibility="invisible"
+                                    android:textColor="@color/outro_branco"
+                                    android:textSize="25sp"
+                                    app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                                    app:layout_constraintStart_toStartOf="@+id/imageView4"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView4"
+                                    app:layout_constraintVertical_bias="0.838" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

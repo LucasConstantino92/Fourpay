@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_operadoras">
+        <item>Tim</item>
+        <item>Oi</item>
+        <item>Nextel</item>
+        <item>Vivo</item>
+        <item>Claro</item>
+        <item>Fluke</item>
+        <item>Net</item>
+    </string-array>
+</resources>
